@@ -4,7 +4,7 @@
 
 ## インストール方法
 
-`.jsxbin` ファイルを **ScriptUI Panels** フォルダに入れ、After Effects の「ウィンドウ」メニューから実行してください。
+`.jsx` ファイルを **ScriptUI Panels** フォルダに入れ、After Effects の「ウィンドウ」メニューから実行してください。
 
 
 
