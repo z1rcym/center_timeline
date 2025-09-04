@@ -1,33 +1,35 @@
-(function(thisObj) {
-    function moveToLayerCenterTime(layer) {
-        if (layer) {
-            var comp = layer.containingComp;
-            if (comp) {
-                // レイヤーの開始時間と終了時間を取得
-                var inPoint = layer.inPoint;
-                var outPoint = layer.outPoint;
+# CenterTimeline
 
-                // センターの時間点を計算
-                var centerTime = inPoint + (outPoint - inPoint) / 2;
 
-                // タイムラインをセンターの時間に移動
-                comp.time = centerTime;
 
-                // 選択を解除
-                layer.selected = false;
-            }
-        }
-    }
+## インストール方法
 
-    // 選択されたレイヤーを取得
-    var selectedLayers = app.project.activeItem.selectedLayers;
+`.jsxbin` ファイルを **ScriptUI Panels** フォルダに入れ、After Effects の「ウィンドウ」メニューから実行してください。
 
-    if (selectedLayers.length > 0) {
-        // 最初の選択レイヤーのみを対象にする
-        var targetLayer = selectedLayers[0];
-        moveToLayerCenterTime(targetLayer);
-    } else {
-        alert("レイヤーを選択してください。");
-    }
 
-})(this);
+
+## 機能
+
+選択しているレイヤーのタイムラインを中央に移動させることができます。
+
+複数のレイヤーを選択している場合は、一番最初に選択したレイヤーが対象となります。
+
+
+
+## 注意事項
+
+- 不具合による損害については、責任を負いかねますのでご了承ください。
+
+- 会社や学校、友人間でのスクリプト共有は可能ですが、インターネット上での広範な配布はご遠慮ください。
+
+
+
+## サポート
+
+ご質問、不具合報告、ご要望などございましたら、以下よりお気軽にご連絡ください：
+
+
+
+- **Instagram**: [z1rcym](https://www.instagram.com/z1rcym)
+
+- **Twitter**: [@z1rcym](https://twitter.com/z1rcym)
